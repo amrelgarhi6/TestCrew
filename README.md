@@ -7,7 +7,9 @@ About The Repo
 This Repo created for QA automation assessment to automate the below-mentioned use cases:
 
 
-### Check packages Type,price and currency for each country [Bahrain - Ksa - Kuwait]  [GUI]
+### Check packages Type,price and currency for each country
+### Check login with invalid username and show an eeror message 
+## On [Bahrain - Ksa - Kuwait] Markets >>   [GUI Testing]
 > For this App : [StcTv App](https://subscribe.stctv.com/kw-en)
 
 
