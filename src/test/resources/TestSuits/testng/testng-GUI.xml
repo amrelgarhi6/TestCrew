@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test Suite">
+    <test name="GUI Regression Test">
+        <!-- PlatformName: [Mozilla Firefox | Google Chrome] -->
+        <parameter name="PlatformName" value="Google Chrome"/>
+        <classes>
+            <class name="runners.TestRunnerGui"/>
+        </classes>
+    </test>
+</suite>

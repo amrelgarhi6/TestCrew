@@ -1,0 +1,211 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>TestCrew-Assessment</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <properties>
+        <webdrivermanager.version>5.2.0</webdrivermanager.version>
+        <!-- Maven project build configurations -->                         <!-- Maven project build configurations -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
+        <maven.java.version>17</maven.java.version>
+        <maven.compiler.release>${maven.java.version}</maven.compiler.release>
+        <maven.compiler.source>${maven.java.version}</maven.compiler.source>
+        <maven.compiler.target>${maven.java.version}</maven.compiler.target>
+        <maven.plugin.validation>VERBOSE</maven.plugin.validation>
+        <!-- Maven surface plugin configurations -->                       <!-- Maven surface plugin configurations -->
+        <suiteXmlFile>testng.xml</suiteXmlFile>
+        <!--- Dependencies versions -->                                                 <!--- Dependencies versions -->
+        <!--- appium -->
+        <appium.version>8.5.1</appium.version>
+        <!--- selenium -->
+        <selenium-java.version>4.12.1</selenium-java.version>
+        <!--- testng -->
+        <testng.version>7.8.0</testng.version>
+        <!-- rest assured  -->
+        <rest-assured.version>5.3.1</rest-assured.version>
+        <json-path-rest-assured.version>${rest-assured.version}</json-path-rest-assured.version>
+        <hamcrest.version>1.3</hamcrest.version>
+        <gson.version>2.9.0</gson.version>
+        <!-- slf4j  -->
+        <slf4j.version>2.0.7</slf4j.version>
+        <slf4j-api.version>${slf4j.version}</slf4j-api.version>
+        <slf4j-simple.version>${slf4j.version}</slf4j-simple.version>
+        <!-- json  -->
+        <org.json.version>20220320</org.json.version>
+        <json-simple.version>1.1.1</json-simple.version>
+        <!-- cucumber  -->
+        <cucumber.version>7.8.0</cucumber.version>
+        <cucumber-java.version>${cucumber.version}</cucumber-java.version>
+        <cucumber-core.version>${cucumber.version}</cucumber-core.version>
+        <cucumber-picocontainer.version>${cucumber.version}</cucumber-picocontainer.version>
+        <cucumber-testng.version>${cucumber.version}</cucumber-testng.version>
+        <cucumber-gherkin.version>${cucumber.version}</cucumber-gherkin.version>
+        <!-- allure  -->
+        <allure.version>2.18.1</allure.version>
+        <allure-cucumber7-jvm.version>2.20.0</allure-cucumber7-jvm.version>
+        <allure-testng.version>${allure.version}</allure-testng.version>
+        <!-- extent reports  -->
+        <extentreports.version>5.0.9</extentreports.version>
+        <extentreports-cucumber7-adapter.version>1.14.0</extentreports-cucumber7-adapter.version>
+        <aspectj.version>1.9.8</aspectj.version>
+        <lombok.version>1.18.28</lombok.version>
+        <!-- apache configuration  -->
+        <apache-commons-configuration.version>1.10</apache-commons-configuration.version>
+        <!-- log4j_logger  -->
+        <log4j.version>2.20.0</log4j.version>
+        <log4j-api.version>${log4j.version}</log4j-api.version>
+        <log4j-core.version>${log4j.version}</log4j-core.version>
+        <!-- plugins  -->                                                                             <!-- plugins  -->
+        <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j-simple.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+            <version>${json-path-rest-assured.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>${apache-commons-configuration.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber-java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber-testng.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>${extentreports-cucumber7-adapter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentreports.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber7-jvm</artifactId>
+            <version>${allure-cucumber7-jvm.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-1.2-api</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>getClasspathFilenames</id>
+                        <goals>
+                            <goal>properties</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <testFailureIgnore>false</testFailureIgnore>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                        -Dcucumber.options="--plugin ru.yandex.qatools.allure.cucumberjvm.AllureReporter"
+                    </argLine>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <!--suppress UnresolvedMavenProperty -->
+                    <argLine>-javaagent:${com.browserstack:browserstack-java-sdk:jar}</argLine>
+                    <systemPropertyVariables>
+                        <cucumber.publish.quiet>true</cucumber.publish.quiet>
+                    </systemPropertyVariables>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

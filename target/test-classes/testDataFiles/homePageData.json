@@ -1,0 +1,26 @@
+{
+  "common": {
+    "homePageTitle": "Choose Your Plan",
+    "selectCountryTitle" : "Select Your Country",
+    "KSACountry":"KSA",
+    "KuwaitCountry" : "Kuwait",
+    "BahrainCountry": "Bahrain",
+    "packages": ["LITE","CLASSIC","PREMIUM"],
+    "Countries":["Bahrain","KSA","Kuwait"]
+  },
+  "KsaCountry": {
+    "countryName": "KSA",
+    "KsaPrices": ["15","25","60"],
+    "countryCurrency": ["SAR/month","SAR/month","SAR/month"]
+  },
+  "BahrainCountry": {
+    "countryName": "Bahrain",
+    "BahrainPrices": ["2","3","6"],
+    "countryCurrency": ["BHD/month","BHD/month","BHD/month"]
+  },
+  "KuwaitCountry": {
+    "countryName": "Kuwait",
+    "KuwaitPrices": ["1.2","2.5","4.8"],
+    "countryCurrency": ["KWD/month","KWD/month","KWD/month"]
+  }
+}

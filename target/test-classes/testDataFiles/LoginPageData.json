@@ -1,0 +1,7 @@
+{
+  "common": {
+    "loginPageTitle": "Sign In",
+    "errorMessage" : "Login ID does not exist. Please enter a valid Email Address or enter your mobile number starting with country code without 00 (e.g: 966XXXXXXX, 965XXXXXXXXX, 973XXXXXXXXX).\n\nNote: If you are STC Home customer, please login with your landline number starting with region code without 0 (e.g: 11444XXXX)Note: If you are STC Home customer, please login with your landline number starting with region code without 0 (e.g: 11444XXXX)",
+    "invalidUserName" : "testtest@testtest.com"
+  }
+}
